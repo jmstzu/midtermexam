@@ -2,37 +2,123 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.CalcContainer {
+  background-color: black;
+  width: 700px;
+  border: 5px solid orange;
+  margin: 250px auto;
+  border-radius: 25px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.DispContainer {
+  margin-bottom: 10px;
+  border-radius: 25px;
+  margin-left: 5px;
+  border: 3PX SOLID orange;
+  margin-right: 5px;
+  height: 60px;
+  background-color: black;
+  color: orange;
+  padding: 3px;
+}
+.ButtonsContainer {
+  border-radius: 25px;
+  background-color: black;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  height: 450px;
+}
+
+.ButtonsContainer button {
+  border: 2px solid orange;
+  margin-top: 5px;
+  margin-left: 50px;
+  background-color: black;
+  color: orange;
+  font-size: 1em;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.Display {
+  font-size: 2em;
+  text-align: right;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.NameTitle {
+  border-radius: 25px;
+  background-color: black;
+  padding: 10px;
+  color: orange;
+}
+
+.NameTitle h1 {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.ButtonsContainer :nth-child(4) {
+  background-color: orange;
+  color: black;
+}
+
+.ButtonsContainer :nth-child(8) {
+  background-color: orange;
+  color: black;
+}
+
+.ButtonsContainer :nth-child(12) {
+  background-color: orange;
+  color: black;
+}
+
+.ButtonsContainer :nth-child(13) {
+  background-color: orange;
+  color: black;
+}
+
+.ButtonsContainer :nth-child(15) {
+  background-color: orange;
+  color: black;
+  box-shadow: 1px;
+}
+
+.ButtonsContainer :nth-child(16) {
+  background-color: orange;
+  color: black;
+  border: 1PX solid black;
+}
+
+.ButtonsContainer :nth-child(17) {
+  margin-top: 10px;
+  border: 3px solid orange;
+  width: 350%;
+  border-radius: 25px;
+}
+
+.ButtonsContainer button:hover {
+  background-color: white;
+  cursor: pointer;
+  box-shadow: 0 0 10px orange;
+}
+
+.ButtonsContainer :nth-child(4):hover, 
+.ButtonsContainer :nth-child(8):hover, 
+.ButtonsContainer :nth-child(12):hover, 
+.ButtonsContainer :nth-child(13):hover, 
+.ButtonsContainer :nth-child(15):hover, 
+.ButtonsContainer :nth-child(16):hover {
+  background-color: white;
+  cursor: pointer;
+  box-shadow: 0 0 10px orange;
 }
